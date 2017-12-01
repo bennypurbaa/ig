@@ -168,7 +168,6 @@ inquirer.prompt(User)
 			const followers = account.user.followed_by.count;
 			return Promise.resolve({id,followers});			
 		}
-	} catch (err){
 		return Promise.reject(err);
 	}
 
